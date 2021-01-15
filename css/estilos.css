@@ -1,5 +1,10 @@
 .contenedor{
-    max-width: 970px;
-    min-width: 300px;
+    margin: auto;
+    width: 970px;
     display: flex;
+    align-items: center;
+    
+}
+.fila{
+    justify-content: center;
 }
