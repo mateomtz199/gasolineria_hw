@@ -1,10 +1,78 @@
-.contenedor{
-    margin: auto;
-    width: 970px;
-    display: flex;
-    align-items: center;
-    
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
-.fila{
-    justify-content: center;
+.contenedor {
+  margin: auto;
+  width: 970px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.fila {
+  justify-content: center;
+}
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #04743b;
+  margin-top: -3px;
+}
+.menu li {
+  display: inline;
+  float: left;
+}
+.menu li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-right: white 1px solid;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.menu li a:hover {
+  background-color: red;
+  font-weight: bold;
+}
+main {
+  width: 968px;
+  border: #04743b 1px solid;
+}
+.texto-centrado {
+  text-align: center;
+}
+
+.formulario {
+  margin: 0.4em 0;
+}
+.formulario label {
+  width: 25%;
+  float: left;
+  text-align: right;
+}
+
+form {
+  padding: 1em;
+  background: #f9f9f9;
+  border: 1px solid #c1c1c1;
+  margin-top: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+
+.formulario input {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 200px;
+}
+.formulario input[type=date]{
+    width: 200px;
+}
+.formulario select{
+    width: 200px;
 }
