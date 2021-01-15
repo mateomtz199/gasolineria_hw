@@ -1,0 +1,5 @@
+.contenedor{
+    max-width: 970px;
+    min-width: 300px;
+    display: flex;
+}
