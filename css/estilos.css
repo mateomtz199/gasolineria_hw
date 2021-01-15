@@ -52,6 +52,8 @@ main {
   width: 25%;
   float: left;
   text-align: right;
+  height: 25px;
+  margin-top: 4px;
 }
 
 form {
@@ -64,15 +66,64 @@ form {
   margin-right: auto;
   padding: 1em;
 }
-
-.formulario input {
-  background-color: #fff;
-  border: 1px solid #ddd;
+.formulario input[type="number"]{
   width: 200px;
 }
-.formulario input[type=date]{
-    width: 200px;
+.formulario input[type="date"] {
+  width: 200px;
+  height: 25px;
+  padding: 5px;
 }
-.formulario select{
-    width: 200px;
+.formulario select {
+  width: 200px;
+  height: 30px;
+  padding: 5px;
+}
+.btn-pagar {
+  color: #0099cc;
+  background: transparent;
+  border: 2px solid #0099cc;
+  border-radius: 6px;
+  color:#0099cc;
+  padding: 8px 16px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-cancelar{
+  color: #ff0000;
+  background: transparent;
+  border: 2px solid #ff0000;
+  border-radius: 6px;
+  color:##ff0000;
+  padding: 8px 16px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-pagar :hover{
+  background-color: #0099ca;
+}
+.btn-cancelar :hover{
+  background-color: #ff0000;
+  color: white;
+}
+.botones{
+  margin-left: 150px;
+}
+.txt-input{
+  border-radius: 5px;
+   border: 1px solid #39c;
+   height: 25px;
+   padding: 5px;
 }

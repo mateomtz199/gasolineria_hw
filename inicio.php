@@ -32,7 +32,7 @@
                 <form action="">
                     <div class="formulario">
                         <label for="Fecha">Fecha: </label>
-                        <input type="date" name="fecha" value="<?php echo date("Y-n-j"); ?>" >
+                        <input type="date" name="fecha" value="<?php echo date("Y-n-j"); ?>">
                     </div>
                     <div class="formulario">
                         <label for="Tipo">Tipo: </label>
@@ -43,21 +43,24 @@
                     </div>
                     <div class="formulario">
                         <label for="Precio">Precio: </label>
-                        <input type="text" name="precio" id="precio">
+                        <input class="txt-input" type="number" name="precio" id="precio" disabled>
                     </div>
                     <div class="formulario">
                         <label for="Cantidad">Cantidad: </label>
-                        <input type="text" name="cantidad" required> Litros
+                        <input class="txt-input" type="number" name="cantidad" required> Litros
                     </div>
                     <div class="formulario">
                         <label for="descuento">Descuento: </label>
                         <select name="descuento" id="descuento">
+                            <option value="0">0%</option>
                             <option value="10">10%</option>
                             <option value="20">20%</option>
                         </select>
                     </div>
-                    <button>Cancelar</button>
-                    <button>Pagar</button>
+                    <div class="formulario botones">
+                        <input class="btn-cancelar" type="reset" value="Cancelar">
+                        <input class="btn-pagar" type="submit" value="Pagar">
+                    </div>
                 </form>
             </main>
         </div>
