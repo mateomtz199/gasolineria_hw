@@ -1,10 +1,11 @@
 $(document).ready(function(){
     $("#tipo").on('change', function(){
-        let tipo = $("#tipo option:selected").text();
-        console.log(tipo);
-        let precio = funciones.costoGasolina(tipo);
-        $("#precio").val(precio);
-        
+        let id = $("#tipo option:selected").val();
+        if(id > 0){
+            $.get("core/producto/precio.php", { id }, function(data) {
+                $("#precio").val(data);
+            });
+        }
         funciones.calcularPago();
     });
 
@@ -26,13 +27,5 @@ $(document).ready(function(){
             let conDescuento = costo - (costo * descuento / 100);
             $("#total").text(conDescuento);
         },
-        costoGasolina: function(tipo){
-            if(tipo === 'Premium'){
-                return 15.00;
-            }else if(tipo === "Magna"){
-                return 10.00;
-            }else
-                return 0.0;
-        }
     }
 });

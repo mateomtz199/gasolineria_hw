@@ -38,8 +38,14 @@
                         <label for="Tipo">Tipo: </label>
                         <select name="tipo" id="tipo">
                             <option value="0">Selecciona tipo</option>
-                            <option value="Premium">Premium</option>
-                            <option value="Magna">Magna</option>
+                            <?php
+                            $consulta = $mysqli->query("SELECT * FROM productos");
+                            while ($producto = mysqli_fetch_array($consulta)) {
+                            ?>
+                                <option value="<?php echo $producto['id']; ?>"><?php echo $producto['nombre']; ?></option>
+                            <?php
+                            }
+                            ?>
                         </select>
                     </div>
                     <div class="formulario">
