@@ -150,22 +150,37 @@ footer{
 }
 .premium{
   background-color: #04743b;
-  padding: 5px;
+  padding: 2px;
   border-radius: 4px;
   color: white;
 }
 .magna{
   background-color: #ff0000;
-  padding: 5px;
+  padding: 2px;
   border-radius: 4px;
   color: white;
 }
 
-
-tbody td {
-  text-align: center;
+table{
+  width: 100%;
+  border-collapse: collapse;
 }
-
+thead{
+  background-color: tomato;
+  color: white;
+  border-bottom: red;
+  padding: 10px;
+}
+th, td {
+  text-align: center;
+  padding: 10px;
+}
 tfoot th {
   text-align: right;
+}
+table tr:nth-child(even) {
+  background-color:lightgray;
+}
+tr:hover td{
+  background-color: lightseagreen;
 }

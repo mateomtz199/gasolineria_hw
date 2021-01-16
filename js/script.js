@@ -4,9 +4,10 @@ $(document).ready(function(){
         
             $.get("core/producto/precio.php", { id }, function(data) {
                 $("#precio").val(data);
+                funciones.calcularPago();
             });
         
-        funciones.calcularPago();
+        
     });
 
     $("#cantidad").on("keyup keydown change",function(){
@@ -16,8 +17,9 @@ $(document).ready(function(){
     $("#descuento").on("change", function(){
         funciones.calcularPago();
     });
-
-
+    $("#cancelar").attr("onclick", function (){
+        $("#total").text('');
+    });
     var funciones = {
         calcularPago: function(){
             let cantidad = $("#cantidad").val();

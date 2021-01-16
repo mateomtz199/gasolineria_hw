@@ -40,7 +40,7 @@
         <p class="texto-centrado">Total a pagar: <span id="total" class="total">0</span></p>
     </div>
     <div class="formulario botones">
-        <input class="btn-cancelar" type="reset" value="Cancelar">
+        <input class="btn-cancelar" onclick="funciones.cancelar();" type="reset" value="Cancelar" id="cancelar">
         <input class="btn-pagar" type="submit" value="Pagar">
     </div>
     <input type="hidden" name="totalEnviar" id="totalEnviar">
