@@ -69,6 +69,12 @@
             </main>
         </div>
 
+        <footer>
+            <div class="fila">
+                <p class="texto-centrado">Este es el pie</p>
+            </div>
+        </footer>
+
     </div>
 
     <script src="js/jquery-3.5.1.min.js"></script>

@@ -7,6 +7,7 @@ body {
   width: 970px;
   display: flex;
   flex-wrap: wrap;
+  border: #04743b 1px solid;
 }
 .fila {
   justify-content: center;
@@ -39,7 +40,7 @@ body {
 }
 main {
   width: 968px;
-  border: #04743b 1px solid;
+  
 }
 .texto-centrado {
   text-align: center;
@@ -100,7 +101,7 @@ form {
   background: transparent;
   border: 2px solid #ff0000;
   border-radius: 6px;
-  color:##ff0000;
+  color:#ff0000;
   padding: 8px 16px;
   text-align: center;
   display: inline-block;
@@ -137,4 +138,9 @@ form {
   border-radius: 2px;
   padding-left: 3px;
   padding-right: 3px;
+}
+footer{
+  background-color: #04743b;
+  width: 970px;
+  color: white;
 }
