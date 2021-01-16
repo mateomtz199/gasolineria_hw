@@ -1,11 +1,11 @@
 $(document).ready(function(){
     $("#tipo").on('change', function(){
         let id = $("#tipo option:selected").val();
-        if(id > 0){
+        
             $.get("core/producto/precio.php", { id }, function(data) {
                 $("#precio").val(data);
             });
-        }
+        
         funciones.calcularPago();
     });
 
@@ -26,6 +26,7 @@ $(document).ready(function(){
             let costo = precio * cantidad;
             let conDescuento = costo - (costo * descuento / 100);
             $("#total").text(conDescuento);
+            $("#totalEnviar").attr("value", conDescuento);
         },
     }
 });

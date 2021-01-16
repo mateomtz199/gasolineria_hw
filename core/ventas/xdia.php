@@ -1,0 +1,1 @@
+<h1>Ventas por día</h1>
