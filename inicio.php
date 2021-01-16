@@ -32,12 +32,13 @@
                 <form action="">
                     <div class="formulario">
                         <label for="Fecha">Fecha: </label>
-                        <input type="date" name="fecha" value="<?php echo date("Y-n-j"); ?>">
+                        <input type="date" name="fecha" value="<?php echo date("Y-m-j"); ?>">
                     </div>
                     <div class="formulario">
                         <label for="Tipo">Tipo: </label>
                         <select name="tipo" id="tipo">
-                            <option value="premium">Premium</option>
+                            <option value="0">Selecciona tipo</option>
+                            <option value="Premium">Premium</option>
                             <option value="Magna">Magna</option>
                         </select>
                     </div>
@@ -47,7 +48,7 @@
                     </div>
                     <div class="formulario">
                         <label for="Cantidad">Cantidad: </label>
-                        <input class="txt-input" type="number" name="cantidad" required> Litros
+                        <input class="txt-input" type="number" name="cantidad" required id="cantidad"> Litros
                     </div>
                     <div class="formulario">
                         <label for="descuento">Descuento: </label>
@@ -56,6 +57,9 @@
                             <option value="10">10%</option>
                             <option value="20">20%</option>
                         </select>
+                    </div>
+                    <div class="formulario">
+                        <p class="texto-centrado">Total a pagar: <span id="total" class="total">0</span></p>
                     </div>
                     <div class="formulario botones">
                         <input class="btn-cancelar" type="reset" value="Cancelar">
@@ -66,6 +70,9 @@
         </div>
 
     </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

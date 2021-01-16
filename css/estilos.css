@@ -127,3 +127,14 @@ form {
    height: 25px;
    padding: 5px;
 }
+
+.total{
+  font-size: 20px;
+  background-color: tomato;
+  color: #f9f9f9;
+  font-weight: 400;
+  padding: 2px;
+  border-radius: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
