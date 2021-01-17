@@ -173,7 +173,7 @@ thead{
 }
 th, td {
   text-align: center;
-  padding: 10px;
+  padding: 5px;
 }
 tfoot th {
   text-align: right;
@@ -183,4 +183,9 @@ table tr:nth-child(even) {
 }
 tr:hover td{
   background-color: lightseagreen;
+}
+.btn-eliminar{
+  padding: 4px;
+  background-color: red;
+  border-radius: 4px;
 }

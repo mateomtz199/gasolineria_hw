@@ -21,7 +21,7 @@
                 <li><a href="?pagina=1">Inicio</a></li>
                 <li><a href="?pagina=3">Ventas por días</a></li>
                 <li><a href="?pagina=4">Ventas totales</a></li>
-                <li><a href="#">Acerca de</a></li>
+                <li><a href="?pagina=acercade">Acerca de</a></li>
             </ul>
 
         </header>
@@ -44,6 +44,9 @@
                             break;
                         case '4':
                             include ("core/ventas/ventas_totales.php");
+                            break;
+                        case 'acercade':
+                            include ("acercade.php");
                             break;
                         default: 
                             include ("core/ventas/form.php");

@@ -20,6 +20,18 @@ $(document).ready(function(){
     $("#cancelar").attr("onclick", function (){
         $("#total").text('');
     });
+
+    let cantidadLitros = 0;
+    let totalVentas = 0;
+    $('#tabla_ventas tbody').find('tr').each(function (i, el) {  
+            cantidadLitros += parseFloat($(this).find('td').eq(3).text());
+            totalVentas += parseFloat($(this).find('td').eq(5).text());        
+        });
+
+    $('#tabla_ventas tfoot tr th').eq(3).text("$" + cantidadLitros);
+    $('#tabla_ventas tfoot tr th').eq(5).text("$" + totalVentas);
+    
+
     var funciones = {
         calcularPago: function(){
             let cantidad = $("#cantidad").val();
