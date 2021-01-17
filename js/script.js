@@ -30,6 +30,23 @@ $(document).ready(function(){
 
     $('#tabla_ventas tfoot tr th').eq(3).text("$" + cantidadLitros);
     $('#tabla_ventas tfoot tr th').eq(5).text("$" + totalVentas);
+
+
+    $("#buscarv").click(function() {                
+        let fecha = $("#fechab").val();
+        $.ajax({    //create an ajax request to display.php
+          type: "GET",
+          url: "core/ventas/xdiaselect.php",
+          data: {fecha : fecha},         
+          dataType: "html",   //expect html to be returned                
+          success: function(response){                    
+              $("#tabla-result").html(response); 
+              alert(response);
+              //alert(response);
+          }
+
+      });
+    });
     
 
     var funciones = {

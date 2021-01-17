@@ -2,10 +2,36 @@
 
 <form action="">
     <div class="formulario">
-        <input type="date">
-        <input type="submit" value="Consultar" class="btn-pagar">
+        <input type="date" name="date" id="fechab">
+        <input type="button" value="Consultar" class="btn-pagar" id="buscarv">
     </div>
 </form>
-<div id="resultadoConsulta">
 
-</div>
+<table id="tabla_ventas">
+    <thead>
+        <tr>
+            <th>Fecha</th>
+            <th>Tipo</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+            <th>Descuento</th>
+            <th>Total</th>
+            <th>Acción</th>
+        </tr>
+    </thead>
+    <tbody id="tabla-result">
+
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>Totales</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </tfoot>
+    </thead>
+</table>
