@@ -26,10 +26,8 @@
 
         </header>
         <div class="fila">
+            <!-- Contenedor para las pàginas -->
             <main>
-                
-                
-                
                 <?php
                     @$pagina=$_GET['pagina'];
                     switch($pagina){
@@ -50,13 +48,10 @@
                             break;
                         default: 
                             include ("core/ventas/form.php");
-                            
                     }
                 ?>
-
-
-
             </main>
+
         </div>
 
         <footer>

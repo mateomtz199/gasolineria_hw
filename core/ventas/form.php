@@ -9,6 +9,7 @@
         <label for="Tipo">Tipo: </label>
         <select name="tipo" id="tipo">
             <option value="0">Selecciona tipo</option>
+            <!-- Obtenemos los productos y el precio desde la base de datos -->
             <?php
             $consulta = $mysqli->query("SELECT * FROM productos");
             while ($producto = mysqli_fetch_array($consulta)) {
@@ -40,7 +41,7 @@
         <p class="texto-centrado">Total a pagar: <span id="total" class="total">0</span></p>
     </div>
     <div class="formulario botones">
-        <input class="btn-cancelar" onclick="funciones.cancelar();" type="reset" value="Cancelar" id="cancelar">
+        <input class="btn-cancelar" type="reset" value="Cancelar" id="cancelar">
         <input class="btn-pagar" type="submit" value="Pagar">
     </div>
     <input type="hidden" name="totalEnviar" id="totalEnviar">

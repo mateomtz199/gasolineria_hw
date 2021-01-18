@@ -1,7 +1,9 @@
+/* Estilos generales a la pàgina */
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+/* Contenedor con el flex y wrap */
 .contenedor {
   margin: auto;
   width: 970px;
@@ -9,9 +11,11 @@ body {
   flex-wrap: wrap;
   border: #04743b 1px solid;
 }
+/* Clase para la fila, no hace mucho, bueno, casi nada */
 .fila {
   justify-content: center;
 }
+/* ******Estilos iniciales al menù ********/
 .menu {
   list-style-type: none;
   margin: 0;
@@ -38,14 +42,18 @@ body {
   background-color: red;
   font-weight: bold;
 }
+/* *Fin de estilos al menù*** */
+
+/* Contenedor main */
 main {
-  width: 968px;
+  width: 970px;
   
 }
+/* Clase para centrar texto */
 .texto-centrado {
   text-align: center;
 }
-
+/* ***Estilos al formulario */
 .formulario {
   margin: 0.4em 0;
 }
@@ -128,7 +136,9 @@ form {
    height: 25px;
    padding: 5px;
 }
+/* Finde estilos al formulario */
 
+/* Estilos para el total */
 .total{
   font-size: 20px;
   background-color: tomato;
@@ -139,21 +149,28 @@ form {
   padding-left: 3px;
   padding-right: 3px;
 }
+
+/* Estilos para el footer */
 footer{
   background-color: #04743b;
   width: 970px;
   color: white;
 }
+
+/* Estilo para textos en el detalle de la venta */
 .detalleSpan{
   font-size: 18px;
   font-weight: 400;
 }
+
+/* Estilo para la gasolina premium en las tablas */
 .premium{
   background-color: #04743b;
   padding: 2px;
   border-radius: 4px;
   color: white;
 }
+/* Estilo para la gasolina magna en las tablas */
 .magna{
   background-color: #ff0000;
   padding: 2px;
@@ -161,6 +178,7 @@ footer{
   color: white;
 }
 
+/* Estilos a la tabla */
 table{
   width: 100%;
   border-collapse: collapse;
@@ -189,3 +207,4 @@ tr:hover td{
   background-color: red;
   border-radius: 4px;
 }
+/* Finde estilos a la tabla */
