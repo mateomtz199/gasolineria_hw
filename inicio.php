@@ -53,6 +53,9 @@
                         case 'insertproducto':
                             include("core/producto/form.php");
                             break;
+                        case 'editar':
+                            include("core/producto/editar.php");
+                            break;
                         default: 
                             include ("core/ventas/form.php");
                     }

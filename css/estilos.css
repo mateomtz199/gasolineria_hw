@@ -213,6 +213,11 @@ tr:hover td {
   background-color: red;
   border-radius: 4px;
 }
+.btn-editar{
+  padding: 4px;
+  background-color:#0099cc;
+  border-radius: 4px;
+}
 /* Finde estilos a la tabla */
 
 /* Hacer una imagen redonda */
@@ -226,6 +231,7 @@ tr:hover td {
   margin-bottom: -75px;
 }
 
+/* Tarjeta Abaout */
 .tarjeta-melis{
   padding-top: 80px;
   border: #04743b 3px solid;
@@ -238,4 +244,15 @@ tr:hover td {
 .destacado{
   font-size: 20px;
   font-weight: 400;
+}
+
+/* Estilo para gregar producto */
+.agregar-prod{
+  text-decoration: none;
+  background-color:blue;
+  color: white;
+  padding: 6px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-weight: 600;
 }

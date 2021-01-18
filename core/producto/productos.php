@@ -4,7 +4,7 @@ $sql = "SELECT * FROM productos";
 $result = $mysqli->query($sql);
 ?>
 <h2 class="texto-centrado">Lista de productos - Gasolinas</h2>
-<a href="?pagina=insertproducto">Insertar producto</a>
+<a href="?pagina=insertproducto" class="agregar-prod">Insertar producto</a>
 <table id="tabla_ventas">
     <thead>
         <tr>
@@ -25,6 +25,7 @@ $result = $mysqli->query($sql);
                 <td><?php echo $producto['precio']; ?></td>
                 <td>
                     <a href="core/producto/eliminar.php?id=<?php echo $producto['id']; ?>" onclick="return confirm('Estas seguro que quieres eliminar');"><img src="img/borrar.png" alt="Eliminar" height="35px" class="btn-eliminar"></a>
+                    <a href="core/producto/editar.php?id=<?php echo $producto['id']; ?>"><img src="img/editar.png" alt="Eliminar" height="35px" class="btn-editar"></a>
                 </td>
             </tr>
         <?php
