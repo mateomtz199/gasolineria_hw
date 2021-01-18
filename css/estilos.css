@@ -47,7 +47,6 @@ body {
 /* Contenedor main */
 main {
   width: 970px;
-  
 }
 /* Clase para centrar texto */
 .texto-centrado {
@@ -75,7 +74,7 @@ form {
   margin-right: auto;
   padding: 1em;
 }
-.formulario input[type="number"]{
+.formulario input[type="number"] {
   width: 200px;
 }
 .formulario input[type="date"] {
@@ -93,7 +92,7 @@ form {
   background: transparent;
   border: 2px solid #0099cc;
   border-radius: 6px;
-  color:#0099cc;
+  color: #0099cc;
   padding: 8px 16px;
   text-align: center;
   display: inline-block;
@@ -104,12 +103,12 @@ form {
   cursor: pointer;
   text-decoration: none;
 }
-.btn-cancelar{
+.btn-cancelar {
   color: #ff0000;
   background: transparent;
   border: 2px solid #ff0000;
   border-radius: 6px;
-  color:#ff0000;
+  color: #ff0000;
   padding: 8px 16px;
   text-align: center;
   display: inline-block;
@@ -120,26 +119,26 @@ form {
   cursor: pointer;
   text-decoration: none;
 }
-.btn-pagar :hover{
+.btn-pagar :hover {
   background-color: #0099ca;
 }
-.btn-cancelar :hover{
+.btn-cancelar :hover {
   background-color: #ff0000;
   color: white;
 }
-.botones{
+.botones {
   margin-left: 150px;
 }
-.txt-input{
+.txt-input {
   border-radius: 5px;
-   border: 1px solid #39c;
-   height: 25px;
-   padding: 5px;
+  border: 1px solid #39c;
+  height: 25px;
+  padding: 5px;
 }
 /* Finde estilos al formulario */
 
 /* Estilos para el total */
-.total{
+.total {
   font-size: 20px;
   background-color: tomato;
   color: #f9f9f9;
@@ -151,27 +150,27 @@ form {
 }
 
 /* Estilos para el footer */
-footer{
+footer {
   background-color: #04743b;
   width: 970px;
   color: white;
 }
 
 /* Estilo para textos en el detalle de la venta */
-.detalleSpan{
+.detalleSpan {
   font-size: 18px;
   font-weight: 400;
 }
 
 /* Estilo para la gasolina premium en las tablas */
-.premium{
+.premium {
   background-color: #04743b;
   padding: 2px;
   border-radius: 4px;
   color: white;
 }
 /* Estilo para la gasolina magna en las tablas */
-.magna{
+.magna {
   background-color: #ff0000;
   padding: 2px;
   border-radius: 4px;
@@ -179,17 +178,18 @@ footer{
 }
 
 /* Estilos a la tabla */
-table{
+table {
   width: 100%;
   border-collapse: collapse;
 }
-thead{
+thead {
   background-color: tomato;
   color: white;
   border-bottom: red;
   padding: 10px;
 }
-th, td {
+th,
+td {
   text-align: center;
   padding: 5px;
 }
@@ -197,14 +197,39 @@ tfoot th {
   text-align: right;
 }
 table tr:nth-child(even) {
-  background-color:lightgray;
+  background-color: lightgray;
 }
-tr:hover td{
+tr:hover td {
   background-color: lightseagreen;
 }
-.btn-eliminar{
+.btn-eliminar {
   padding: 4px;
   background-color: red;
   border-radius: 4px;
 }
 /* Finde estilos a la tabla */
+
+/* Hacer una imagen redonda */
+.redondo-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  border:#04743b 4px solid;
+  display:block;
+  margin: auto;
+  margin-bottom: -75px;
+}
+
+.tarjeta-melis{
+  padding-top: 80px;
+  border: #04743b 3px solid;
+  border-radius: 15px;
+  margin: auto;
+  width: 600px;
+  margin-bottom: 15px;
+  background-color: whitesmoke;
+}
+.destacado{
+  font-size: 20px;
+  font-weight: 400;
+}
