@@ -44,7 +44,7 @@ $result = $mysqli->query($sql);
                 <td><?php echo $venta['descuento']; ?></td>
                 <td><?php echo $venta['total']; ?></td>
                 <td>
-                    <a href="core/ventas/eliminar.php?id=<?php echo $venta['id']; ?>"><img src="img/borrar.png" alt="Eliminar" height="35px" class="btn-eliminar"></a>
+                    <a onclick="return confirm('Estas seguro que quieres eliminar');" href="core/ventas/eliminar.php?id=<?php echo $venta['id']; ?>"><img src="img/borrar.png" alt="Eliminar" height="35px" class="btn-eliminar"></a>
                 </td>
             </tr>
         <?php

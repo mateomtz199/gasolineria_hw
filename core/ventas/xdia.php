@@ -22,16 +22,4 @@
     <tbody id="tabla-result">
 
     </tbody>
-    <tfoot>
-        <tr>
-            <th>Totales</th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </tfoot>
-    </thead>
 </table>

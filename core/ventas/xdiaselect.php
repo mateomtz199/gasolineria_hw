@@ -19,7 +19,11 @@ if (isset($_GET['fecha'])) {
     WHERE
         v.fecha = '$fecha'";
     $result = $mysqli->query($sql);
+    $totalCantidad = 0;
+    $totalVenta = 0;
     while ($venta = mysqli_fetch_array($result)) {
+        $totalCantidad += $venta['cantidad'];
+        $totalVenta += $venta['total'];
 ?>
         <tr>
             <td><?php echo $venta['fecha']; ?></td>
@@ -30,10 +34,13 @@ if (isset($_GET['fecha'])) {
             <td><?php echo $venta['descuento']; ?></td>
             <td><?php echo $venta['total']; ?></td>
             <td>
-                <a href="core/ventas/eliminar.php?id=<?php echo $venta['id']; ?>"><img src="img/borrar.png" alt="Eliminar" height="35px" class="btn-eliminar"></a>
+                <a href="core/ventas/eliminar.php?id=<?php echo $venta['id']; ?>" onclick="return confirm('Estas seguro que quieres eliminar');"><img src="img/borrar.png" alt="Eliminar" height="35px" class="btn-eliminar"></a>
             </td>
         </tr>
-<?php
+    <?php
     }
+    ?>
+   
+<?php
 }
 ?>
